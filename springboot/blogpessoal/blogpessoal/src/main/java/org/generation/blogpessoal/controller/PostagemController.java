@@ -49,7 +49,8 @@ public class PostagemController {
 		return ResponseEntity.status(HttpStatus.CREATED).body(postagemRepository.save(postagem));
 	}
 	
-	
+	/*@Valid: Valida o Objeto Postagem enviado no Request Body, conforme as regras 
+	 * definidas na Model Postagem.*/
 	@PutMapping
 	public ResponseEntity<Postagem>putPostagem(@Valid @RequestBody Postagem postagem){
 		return postagemRepository.findById(postagem.getId()).map(resposta -> ResponseEntity.ok()
