@@ -19,6 +19,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 public class Tema {
 	
+	//cascade=CascadeType.ALL define que qualquer mudança na classe tema afetará as postagens associadas
 	@OneToMany(mappedBy="tema", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("tema")
 	private List<Postagem> postagem;
