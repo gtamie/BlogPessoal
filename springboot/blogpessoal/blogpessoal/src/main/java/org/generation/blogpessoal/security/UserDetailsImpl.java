@@ -8,13 +8,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 /**
- * UserDetails : interface que descreve o usuário para 
- * o Spring Security,ou seja, detalha as caracteríticas do usuário.
- * 
- * 
- * 
- * As características descritas na interface UserDetails são:
- * 
+ * UserDetails : interface que detalha as caracteríticas do usuário:
  * 1) Credenciais do usuário (Username e Password)
  * 2) As Autorizações do usuário (o que ele pode e não pode fazer),
  *    através da Collection authorities do tipo GrantedAuthority
@@ -24,7 +18,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 public class UserDetailsImpl implements UserDetails{
 	
-	//classe para controle interno
+	/*classe para controle interno. É o recurso para dizer ao Java 
+	 * que um objeto serializado é compatível ou não com o .class 
+	 * utilizado para desserializar. 1L é o valor padrão atribuído.
+	 */
 	private static final long serialVersionUID = 1L;
 
 	private String userName;
@@ -50,7 +47,7 @@ public class UserDetailsImpl implements UserDetails{
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 	
-		return null;
+		return authorities;
 	}
 	
 

@@ -2,7 +2,7 @@ package org.generation.blogpessoal.model;
 
 public class UsuarioLogin {
 	
-	private Long id;
+	private long id;
 	
 	private String nome;
 	

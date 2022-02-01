@@ -73,9 +73,6 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter{
 		return new BCryptPasswordEncoder();
 	}
 	
-	/*
-	 *
-	 */
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
@@ -92,7 +89,7 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter{
 		 *.anyRequest().authenticated()                   -> qualquer outro endpoint precisará do token
 		 *.and().httpBasic()                              -> vamos utilizar o padrão Basic Security para gerar a chave token
 		 *.and().sessionManagement()                      -> Cria um gerenciador de Sessões
-		 *      .sessionCreationPolicy(SessionCreationPolicy.STATELESS)  -> Define como o Spring Secuiryt irá criar (ou não) as sessões
+		 *      .sessionCreationPolicy(SessionCreationPolicy.STATELESS)  -> Define como o Spring Security irá criar (ou não) as sessões
 		 * 																	STATELESS : Nunca será criada uma sessão, ou seja, basta enviar
 		 * 																	o token através do cabeçalho da requisição que a mesma será processada.
 		 *.and().cors()                                   -> O compartilhamento de recursos de origem cruzada (CORS) surgiu 

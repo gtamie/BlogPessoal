@@ -77,7 +77,7 @@ public class UsuarioService {
 
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 		
-		return encoder.encode(senha); //pq não usuario.getSenha() ??
+		return encoder.encode(senha); 
 
 	}
 	
