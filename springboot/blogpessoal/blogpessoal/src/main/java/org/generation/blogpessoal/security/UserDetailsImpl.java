@@ -2,26 +2,13 @@ package org.generation.blogpessoal.security;
 
 import java.util.Collection;
 import java.util.List;
-
 import org.generation.blogpessoal.model.Usuario;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-/**
- * UserDetails : interface que detalha as caracteríticas do usuário:
- * 1) Credenciais do usuário (Username e Password)
- * 2) As Autorizações do usuário (o que ele pode e não pode fazer),
- *    através da Collection authorities do tipo GrantedAuthority
- * 3) As Restrições (isAccountNonExpired(), isAccountNonLocked(), 
- *    isCredentialsNonExpired() e isEnabled()) da conta do usuário.
- */
 
 public class UserDetailsImpl implements UserDetails{
 	
-	/*classe para controle interno. É o recurso para dizer ao Java 
-	 * que um objeto serializado é compatível ou não com o .class 
-	 * utilizado para desserializar. 1L é o valor padrão atribuído.
-	 */
 	private static final long serialVersionUID = 1L;
 
 	private String userName;
@@ -95,6 +82,8 @@ public class UserDetailsImpl implements UserDetails{
 		
 		return true;
 	}
+	
+	
 	
 
 }

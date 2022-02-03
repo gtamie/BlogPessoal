@@ -16,7 +16,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table (name = "tb_temas")
-
 public class Tema {
 	
 	//cascade=CascadeType.ALL define que qualquer mudança na classe tema afetará as postagens associadas
