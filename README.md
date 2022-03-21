@@ -4,8 +4,8 @@ Projeto de blog desenvolvido durante o bootcamp da Generation Brasil.
 
 ## ⚙️ Status
 
-Concluído.
-O front-end também encontra-se concluído. Você pode acessar o repositório referente a ele em: https://github.com/gtamie/blog-pessoal-front-end-deploy
+Concluído.</br>
+O front-end também encontra-se concluído. Você pode acessar o repositório referente a ele em: https://github.com/gtamie/blog-pessoal-front-end-deploy </br>
 Você pode visualizar o deploy do projeto em: https://blogdandelion.netlify.app
 
 ## 💻 Pré-requisitos
